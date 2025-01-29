@@ -1,0 +1,5 @@
+class Role < ApplicationRecord
+    has_many :permissions
+    has_many :resources, through: :permissions
+    has_many :users
+end
